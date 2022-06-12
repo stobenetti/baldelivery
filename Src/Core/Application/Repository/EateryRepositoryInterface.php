@@ -8,4 +8,6 @@ interface EateryRepositoryInterface
     public function create(Eatery $eatery): int;
     
     public function find(int $id):?Eatery;
+
+    public function findAllAndOrderByDistanceAsc($longitude, $latitude): array;
 }
